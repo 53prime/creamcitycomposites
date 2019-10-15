@@ -10,17 +10,18 @@ layout: layout.html
             <div class="owl-wrapper">
                 <div class="owl-item">
                     <div class="item img-bg-center">
-                        <div class="container overlay">
+                        <div class="container">
+                            <div class="row d-none d-sm-flex">
+                                <div class="overlay video-container video-container-custom">
+                                    <div class="screen mute" id="tv"></div>
+                                </div>
+                            </div><!-- /.row -->
+                            <div class="row dark-bg d-flex d-sm-none overlay"></div>
                             <div class="caption vertical-center text-center">
                                 <h1 class="fadeInDown-1 light-color">PREMIUM CLASS CARBON FIBER COMPONENTS</h1>
                                 <p class="fadeInDown-2 light-color">Consistent Fit & Perfection – On-Time, Every Time.</p>
                             </div><!-- /.caption -->
                         </div><!-- /.container -->
-                        <div class="embed-responsive embed-responsive-custom">
-                            <div class="embed-responsive-item">
-                                <div class="screen mute" id="tv"></div>
-                            </div> <!-- /.embed-responsive-item -->
-                        </div> <!-- /.embed-responsive -->
                     </div><!-- /.item -->
                 </div><!-- /.owl-item -->
             </div><!-- /.owl-wrapper -->
@@ -212,21 +213,22 @@ layout: layout.html
         disablekb: 1,
         enablejsapi: 0,
         iv_load_policy: 3,
-        showinfo: 0
+        showinfo: 0,
+        playsinline: 1
     };
-
+ 
     var videoConfig = {
-        height: 900,
-        width: 1600,
+        height: 480,
+        width: 1280,
         wmode: 'opaque',
         videoId: '1tkcKWbFE38',
-        suggestedQuality: 'hd720'
+        //suggestedQuality: 'large'
     }
 
     function onYouTubePlayerAPIReady() {
         tv = new YT.Player('tv', {
-            height: 900,
-            width: 1600,
+            height: 480,
+            width: 1280,
             wmode: 'opaque',
             events: {
                 'onReady': onPlayerReady,
