@@ -122,10 +122,11 @@ footer .miusa>div:first-child {
 }
 
 #response div.main {
-    display: block;
+    height: 100%;
+    width: 100%;
 }
 
-#response .back-link {
+#response #back-link {
     display: none;
 }
 
