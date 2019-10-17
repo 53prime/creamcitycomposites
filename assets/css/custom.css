@@ -120,3 +120,12 @@ footer .miusa>div:first-child {
 #contact-form input.form-check-input {
     width: auto;
 }
+
+#response div.main {
+    display: block;
+}
+
+#response .back-link {
+    display: none;
+}
+
