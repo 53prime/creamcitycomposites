@@ -107,3 +107,16 @@ footer .miusa>div:first-child {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
+
+#contact-form label.form-check-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    font-size: 18px;
+    display: inline-block;
+    clear: none;
+}
+
+#contact-form input.form-check-input {
+    width: auto;
+}
