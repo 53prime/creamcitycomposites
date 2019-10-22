@@ -33,6 +33,7 @@
 .more-info {
     background-image: url("/assets/images/formula1a.jpg");
     color: white;
+    text-align: center;
 }
 
 .more-info #triangle {
