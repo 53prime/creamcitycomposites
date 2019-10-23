@@ -36,7 +36,7 @@
     text-align: center;
 }
 
-.more-info #triangle {
+#triangle {
     position: absolute;
     z-index: 1;
     top: 0;
