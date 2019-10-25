@@ -15,6 +15,10 @@
     color: white;
 }
 
+.grey-text {
+    color: silver;
+}
+
 .blue-background {
     background-image: url("/assets/images/art/pattern-background02.png");
     color: white;
@@ -109,6 +113,14 @@ footer .miusa>div:first-child {
     position: relative;
 }
 
+.why-hero {
+    background-image: url("/assets/images/why-cream-city-composites-bg.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
 #contact-form label.form-check-label {
     float: none;
     width: auto;
@@ -177,5 +189,20 @@ figure.item {
 
 .item:hover figcaption {
     opacity:0;
+}
+
+section.features {
+    display: flex;
+}
+
+section.features > div {
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100px;
+    color: silver;
+    background: black;
 }
 
