@@ -197,12 +197,25 @@ section.features {
 
 section.features > div {
     width: 12.5%;
+    height:140px;
+    color: silver;
+    background: black;
+    padding: 10px;
+    border: solid darkslategray 1px;
+}
+
+section.features > div > div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:100px;
-    color: silver;
+}
+
+section.features > div:first-child{
     background: black;
 }
+
+section.features > div:nth-child(2){
+    background: black;
+} 
 
