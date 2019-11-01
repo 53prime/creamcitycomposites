@@ -19,6 +19,10 @@
     color: silver;
 }
 
+.black-text {
+    color: black;
+}
+
 .blue-background {
     background-image: url("/assets/images/art/pattern-background02.png");
     color: white;
@@ -106,7 +110,10 @@ footer .miusa>div:first-child {
 
 
 .about-hero {
-    background-image: url("/assets/images/About-CreamCity.jpg");
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ), url("/assets/images/About-CreamCity.jpg");
     background-size: cover;
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -115,6 +122,17 @@ footer .miusa>div:first-child {
 
 .why-hero {
     background-image: url("/assets/images/why-cream-city-composites-bg.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.partners-hero {
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ), url("/assets/images/Partners-background.jpg");
     background-size: cover;
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -160,7 +178,7 @@ figure.item {
     cursor: pointer;
 }
 
-.item img {
+figure.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -168,7 +186,7 @@ figure.item {
     transform:scale(1);
 }
 
-.item figcaption {
+figure.item figcaption {
     position:absolute;
     bottom:0;
     background: rgba(0,0,0,0.5);
@@ -183,11 +201,11 @@ figure.item {
     padding: 0;
 }
 
-.item:hover img {
+figure.item:hover img {
     transform:scale(1.2);
 }
 
-.item:hover figcaption {
+figure.item:hover figcaption {
     opacity:0;
 }
 
@@ -200,8 +218,8 @@ section.features > div {
     height:140px;
     color: silver;
     background: black;
-    padding: 10px;
-    border: solid darkslategray 1px;
+    padding: 20px 10px;
+    border: solid #555 1px;
 }
 
 section.features > div > div {
@@ -218,4 +236,31 @@ section.features > div:first-child{
 section.features > div:nth-child(2){
     background: black;
 } 
+
+li.item {
+    height: 200px;
+    background: white;
+    padding: 10px;
+}
+
+li.item figure>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.item img {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    transition: width .5s ease-out;
+}
+
+li.item:hover img {
+    width: 80%;
+}
 
