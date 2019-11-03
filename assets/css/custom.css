@@ -211,10 +211,14 @@ figure.item:hover figcaption {
 
 section.features {
     display: flex;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: center;
 }
 
 section.features > div {
     width: 12.5%;
+    min-width: 115px;
     height:140px;
     color: silver;
     background: black;
