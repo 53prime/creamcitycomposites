@@ -1,8 +1,12 @@
 /*===================================================================================*/
+
+
 /*	CUSTOM CSS STYLES
 /*===================================================================================*/
 
+
 /* Insert your own styles in here! */
+
 .grey {
     background: rgba(112, 128, 144, 0.3);
 }
@@ -53,7 +57,7 @@
 section#hero .video-container-custom {
     padding-bottom: 0;
 }
-    
+
 @media only screen and (min-width: 855px) {
     section#hero .video-container-custom {
         padding-bottom: 41.686%;
@@ -90,6 +94,12 @@ section.sub-hero {
     padding: 30px 100px;
 }
 
+@media(max-width:980px) {
+    section.sub-hero {
+        flex-direction: column;
+    }
+}
+
 section.sub-hero>div:nth-child(2) {
     width: 200px;
     display: flex;
@@ -108,12 +118,8 @@ footer .miusa>div:first-child {
     padding-top: 5px;
 }
 
-
 .about-hero {
-    background-image:linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ), url("/assets/images/About-CreamCity.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/About-CreamCity.jpg");
     background-size: cover;
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -129,10 +135,7 @@ footer .miusa>div:first-child {
 }
 
 .partners-hero {
-    background:linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ), url("/assets/images/Partners-background.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/Partners-background.jpg");
     background-size: cover;
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -161,18 +164,18 @@ footer .miusa>div:first-child {
     display: none;
 }
 
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 200px;
     padding-top: 50px;
     max-width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 figure.item {
     overflow: hidden;
-    margin:0;
+    margin: 0;
     position: relative;
     padding: 0;
     cursor: pointer;
@@ -183,30 +186,30 @@ figure.item img {
     height: 100%;
     object-fit: cover;
     transition: transform ease-out .2s;
-    transform:scale(1);
+    transform: scale(1);
 }
 
 figure.item figcaption {
-    position:absolute;
-    bottom:0;
-    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:1;
+    opacity: 1;
     transition: all ease-out .3s;
     padding: 0;
 }
 
 figure.item:hover img {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 figure.item:hover figcaption {
-    opacity:0;
+    opacity: 0;
 }
 
 section.features {
@@ -216,30 +219,30 @@ section.features {
     justify-content: center;
 }
 
-section.features > div {
+section.features>div {
     width: 12.5%;
     min-width: 115px;
-    height:140px;
+    height: 140px;
     color: silver;
     background: black;
     padding: 20px 10px;
     border: solid #555 1px;
 }
 
-section.features > div > div {
+section.features>div>div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-section.features > div:first-child{
+section.features>div:first-child {
     background: black;
 }
 
-section.features > div:nth-child(2){
+section.features>div:nth-child(2) {
     background: black;
-} 
+}
 
 li.item {
     height: 200px;
@@ -267,4 +270,3 @@ li.item img {
 li.item:hover img {
     width: 80%;
 }
-
